@@ -1,0 +1,7 @@
+<h1>Radio buttons style: {{ displayMode }}</h1>
+<ion-radio-group *ngIf="visible" [(ngModel)]="displayMode">
+  <ion-radio value="ios" [mode]="displayMode">iOS</ion-radio><br />
+  <ion-radio value="md" [mode]="displayMode">MD</ion-radio><br />
+</ion-radio-group>
+
+<ion-button (click)="toggleVisibility()"> Toggle Visibility </ion-button>
